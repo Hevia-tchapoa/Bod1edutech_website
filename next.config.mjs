@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  env: {
+    NEXT_TELEMETRY_DISABLED: '1',
+  },
+};
 
 export default nextConfig;
