@@ -1,0 +1,175 @@
+/* =============================================
+   Notre Offre — BOD1 EduTech
+   ============================================= */
+
+.page-hero__content {
+  position: relative;
+  z-index: 1;
+}
+
+.page-hero__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.6);
+}
+
+.page-hero__breadcrumb a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+.page-hero__breadcrumb a:hover { color: var(--white); }
+.page-hero__breadcrumb span:last-child { color: var(--secondary-light); font-weight: 600; }
+
+/* Intro */
+.offre-intro {
+  max-width: 800px;
+}
+
+/* Grid */
+.offre-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+/* Card */
+.offre-card {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  border: 2px solid transparent;
+  box-shadow: var(--shadow-card);
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.offre-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--color);
+}
+
+.offre-card:hover {
+  border-color: var(--color);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+.offre-card__top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.offre-card__icon {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius);
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  flex-shrink: 0;
+}
+
+.offre-card__programme {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color);
+  background: var(--bg);
+  border: 1.5px solid var(--color);
+}
+
+.offre-card__name {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.offre-card__tagline {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color);
+  margin-bottom: 16px;
+}
+
+.offre-card__desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 24px;
+}
+
+/* Levels */
+.offre-card__levels {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.offre-card__level {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: var(--radius);
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+}
+
+.offre-card__level-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color);
+  background: var(--bg);
+  border: 1px solid var(--color);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.offre-card__level-age {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.offre-card__level-skills {
+  font-size: 0.8rem;
+  color: var(--text);
+  line-height: 1.4;
+  flex: 1;
+}
+
+.offre-card__cta {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .offre-grid { grid-template-columns: 1fr; }
+}

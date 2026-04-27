@@ -1,0 +1,194 @@
+/* PilierPage */
+.pilier-hero {
+  padding-top: 140px;
+}
+
+.pilier-hero__tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--pilier-color);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  margin-bottom: 16px;
+}
+
+.pilier-hero__icon {
+  font-size: 3.5rem;
+  margin-bottom: 8px;
+}
+
+.pilier-hero__badge {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--dark);
+  background: var(--secondary-light);
+}
+
+/* Desc */
+.pilier-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 48px;
+}
+
+.pilier-desc__text { max-width: 640px; }
+
+.pilier-desc__cta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* Levels */
+.pilier-levels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.pilier-level-card {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  border: 2px solid var(--lbg);
+  overflow: hidden;
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.pilier-level-card:hover {
+  border-color: var(--lcolor);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+}
+
+.pilier-level-card__header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  background: var(--lbg);
+}
+
+.pilier-level-card__icon {
+  font-size: 2rem;
+}
+
+.pilier-level-card__badge {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 800;
+  font-family: var(--font-heading);
+  color: var(--lcolor);
+}
+
+.pilier-level-card__age {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.pilier-level-card__body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.pilier-level-card__section-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--lcolor);
+  margin-bottom: 8px;
+}
+
+.pilier-level-card__content {
+  font-size: 0.875rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.pilier-level-card__skills {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.pilier-level-card__cta {
+  display: block;
+  padding: 16px 24px;
+  text-align: center;
+  background: var(--lbg);
+  color: var(--lcolor);
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+
+.pilier-level-card:hover .pilier-level-card__cta {
+  background: var(--lcolor);
+  color: var(--white);
+}
+
+/* Others */
+.pilier-others {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.pilier-other-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 24px;
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  border: 2px solid var(--border);
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all var(--transition);
+}
+
+.pilier-other-card:hover {
+  border-color: var(--color);
+  color: var(--color);
+  transform: translateX(4px);
+  box-shadow: var(--shadow);
+}
+
+.pilier-other-card__icon { font-size: 1.5rem; }
+.pilier-other-card__name { flex: 1; }
+.pilier-other-card__arrow { font-weight: 800; transition: transform var(--transition-fast); }
+.pilier-other-card:hover .pilier-other-card__arrow { transform: translateX(4px); }
+
+@media (max-width: 1024px) {
+  .pilier-levels { grid-template-columns: 1fr; }
+  .pilier-others { grid-template-columns: 1fr; }
+  .pilier-desc { flex-direction: column; align-items: flex-start; }
+  .pilier-desc__cta { flex-direction: row; }
+}
+
+@media (max-width: 640px) {
+  .pilier-desc__cta { flex-direction: column; }
+}

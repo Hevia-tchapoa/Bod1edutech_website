@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="405.473" height="182.416" viewBox="0 0 405.473 182.416">
+  <g id="Logo_Normal" data-name="Logo Normal" transform="translate(-564 -464.584)">
+    <text id="BOD1" transform="translate(684.473 545)" font-size="78" font-family="Urbanist-ExtraBold, Urbanist" font-weight="800" letter-spacing="-0.036em"><tspan x="0" y="0">BOD1</tspan></text>
+    <text id="EduTech" transform="translate(684.473 610)" fill="#5324f0" font-size="78" font-family="Urbanist-ExtraBold, Urbanist" font-weight="800" letter-spacing="-0.036em"><tspan x="0" y="0">EduTech</tspan></text>
+    <text id="Sois_créatif_sois_smart" data-name="Sois créatif, sois smart" transform="translate(607.473 641)" font-size="24" font-family="Urbanist-Medium, Urbanist" font-weight="500" letter-spacing="0.108em"><tspan x="0" y="0">SOIS CRÉATIF, SOIS SMART</tspan></text>
+    <g id="Groupe_3871" data-name="Groupe 3871" transform="translate(-94 -287.71)">
+      <path id="Soustraction_2" data-name="Soustraction 2" d="M67.8,122.916c-.664,0-1.295-.013-1.876-.04H44.051V100.85H22.9a22.895,22.895,0,1,1,0-45.789H44.051V0H71.873V.009C72.166,0,72.459,0,72.742,0A32.173,32.173,0,0,1,99.511,50.012a39.162,39.162,0,0,1,11.93,13.582,38.779,38.779,0,0,1-.613,37.357,39.406,39.406,0,0,1-13.494,13.918,64.942,64.942,0,0,1-10.883,5.293,36.234,36.234,0,0,1-12.124,2.606c-.776,0-1.638.026-2.455.053v.056H70.15C69.22,122.9,68.475,122.916,67.8,122.916ZM24.054,60.857a17.1,17.1,0,1,0,0,34.2H72.742a17.1,17.1,0,0,0,0-34.2ZM54.326,17.546V41.889H76.351a12.172,12.172,0,1,0,0-24.343Z" transform="translate(658 775.794)" fill="#5324f0"/>
+      <g id="Groupe_3864" data-name="Groupe 3864" transform="translate(679.446 847.085)">
+        <circle id="Ellipse_3" data-name="Ellipse 3" cx="6.955" cy="6.955" r="6.955" transform="translate(0)" fill="#ce9721"/>
+        <ellipse id="Ellipse_4" data-name="Ellipse 4" cx="6.666" cy="6.955" rx="6.666" ry="6.955" transform="translate(41.153)" fill="#ce9721"/>
+      </g>
+      <g id="Groupe_3867" data-name="Groupe 3867" transform="matrix(0.999, -0.035, 0.035, 0.999, 677.434, 753.258)">
+        <g id="Groupe_3865" data-name="Groupe 3865" transform="translate(0)">
+          <path id="Tracé_192" data-name="Tracé 192" d="M2.029,17.656A2.029,2.029,0,0,1,0,15.627V2.029a2.029,2.029,0,0,1,4.057,0v13.6A2.029,2.029,0,0,1,2.029,17.656Z" transform="translate(0 27.836) rotate(-90)" fill="#ce9721"/>
+          <path id="Tracé_194" data-name="Tracé 194" d="M2.029,17.656A2.029,2.029,0,0,1,0,15.627V2.029a2.029,2.029,0,0,1,4.057,0v13.6A2.029,2.029,0,0,1,2.029,17.656Z" transform="translate(21.142 18.444) rotate(135)" fill="#ce9721"/>
+          <path id="Tracé_195" data-name="Tracé 195" d="M-1.471,14.156A2.029,2.029,0,0,1-3.5,12.127v-13.6A2.029,2.029,0,0,1-1.471-3.5,2.029,2.029,0,0,1,.557-1.471v13.6A2.029,2.029,0,0,1-1.471,14.156Z" transform="translate(27.108 3.5)" fill="#ce9721"/>
+          <path id="Tracé_196" data-name="Tracé 196" d="M2.029,17.656A2.029,2.029,0,0,1,0,15.627V2.029a2.029,2.029,0,0,1,4.057,0v13.6A2.029,2.029,0,0,1,2.029,17.656Z" transform="translate(33.581 21.312) rotate(-135)" fill="#ce9721"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

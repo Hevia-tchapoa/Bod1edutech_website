@@ -1,0 +1,222 @@
+/* APropos */
+.apropos-presentation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.apropos-highlights {
+  display: flex;
+  gap: 32px;
+  margin-top: 36px;
+  flex-wrap: wrap;
+}
+
+.apropos-highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.apropos-highlight__num {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.apropos-highlight__label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* Photo frame */
+.apropos-photo-frame {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  aspect-ratio: 4/5;
+  background: var(--gradient-hero);
+  box-shadow: 0 32px 80px rgba(0,0,0,0.4);
+}
+
+.apropos-photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.88) contrast(1.04);
+}
+
+.apropos-photo-frame::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(15,10,46,0.05) 30%, rgba(15,10,46,0.72) 100%);
+  pointer-events: none;
+}
+
+.apropos-photo-frame__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 20px;
+}
+
+/* Visual card */
+.apropos-visual-card {
+  background: rgba(255,255,255,0.07);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: var(--radius-xl);
+  padding: 24px 28px;
+  text-align: center;
+  color: var(--white);
+}
+
+.apropos-visual-card__emoji { font-size: 4rem; margin-bottom: 20px; }
+
+.apropos-visual-card__title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.apropos-visual-card__slogan {
+  font-size: 1rem;
+  color: var(--secondary-light);
+  font-style: italic;
+  margin-bottom: 28px;
+}
+
+.apropos-visual-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.apropos-visual-card__tags span {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.85);
+}
+
+/* Vision grid */
+.apropos-vision-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.apropos-vision-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  transition: all var(--transition);
+}
+
+.apropos-vision-card:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.2);
+}
+
+.apropos-vision-card__icon { font-size: 2.5rem; margin-bottom: 16px; }
+
+.apropos-vision-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--secondary-light);
+  margin-bottom: 12px;
+}
+
+.apropos-vision-card__text {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.7;
+}
+
+/* Values */
+.apropos-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.apropos-value-card {
+  padding: 32px;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  transition: all var(--transition);
+}
+
+.apropos-value-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-4px);
+  border-color: rgba(89,50,232,0.2);
+}
+
+.apropos-value-card__icon { font-size: 2rem; margin-bottom: 14px; }
+
+.apropos-value-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.apropos-value-card__desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Team placeholder */
+.apropos-team-placeholder {
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-xl);
+  padding: 64px 32px;
+}
+
+.apropos-team-placeholder__inner {
+  text-align: center;
+}
+
+.apropos-team-placeholder__icon { font-size: 3rem; display: block; margin-bottom: 16px; }
+
+.apropos-team-placeholder__text {
+  font-size: 1rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+@media (max-width: 1024px) {
+  .apropos-presentation { grid-template-columns: 1fr; }
+  .apropos-presentation__visual { display: none; }
+  .apropos-vision-grid { grid-template-columns: 1fr; }
+  .apropos-values-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .apropos-values-grid { grid-template-columns: 1fr; }
+  .apropos-highlights { gap: 20px; }
+}
