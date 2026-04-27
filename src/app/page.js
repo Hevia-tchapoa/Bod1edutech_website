@@ -106,21 +106,21 @@ export default function Home() {
 
             <div className="home-hero__stat home-hero__stat--top">
               <div className="home-hero__stat-icon">
-                <i className="fa-solid fa-users"></i>
+                <i className="fa-solid fa-microchip"></i>
               </div>
               <div className="home-hero__stat-text">
-                <strong>+200</strong>
-                <span>{lang === 'fr' ? 'Élèves formés' : 'Students trained'}</span>
+                <strong>4</strong>
+                <span>{lang === 'fr' ? 'Piliers technologiques' : 'Technology pillars'}</span>
               </div>
             </div>
 
             <div className="home-hero__stat home-hero__stat--bottom">
               <div className="home-hero__stat-icon" style={{ background: 'var(--secondary)', color: 'var(--dark)' }}>
-                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-graduation-cap"></i>
               </div>
               <div className="home-hero__stat-text">
-                <strong>4.9 / 5</strong>
-                <span>{lang === 'fr' ? 'Satisfaction parents' : 'Parent satisfaction'}</span>
+                <strong>7 – 18</strong>
+                <span>{lang === 'fr' ? 'Ans accompagnés' : 'Years supported'}</span>
               </div>
             </div>
           </div>
@@ -251,7 +251,8 @@ export default function Home() {
                       src={`/images/testi-${i + 1}.jpg`}
                       alt={item.name}
                       className="home-testi-card__avatar-img"
-                      onError={(e) => { e.target.style.display = 'none'; }}
+                      style={{ display: 'none' }}
+                      onLoad={(e) => { e.target.style.display = 'block'; }}
                     />
                     <span className="home-testi-card__avatar-initials">{item.initials}</span>
                   </div>
